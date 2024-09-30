@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой адаптивный вебсайт</title>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            position: relative; /* Устанавливаем позиционирование относительно родителя */
+        }
+        .header__logo {
+            position: absolute; /* Абсолютное позиционирование для перекрытия */
+            z-index: 2; /* Выше, чем навигация */
+            left: 20px; /* Положение логотипа */
+            top: 10px; /* Положение логотипа */
+            font-size: 1.5em; /* Размер шрифта */
+        }
+        .header__nav {
+            position: absolute; /* Абсолютное позиционирование для перекрытия */
+            z-index: 1; /* Ниже, чем логотип */
+            right: 20px; /* Положение навигации */
+            top: 10px; /* Положение навигации */
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+            padding: 10px; /* Отступы */
+            border-radius: 5px; /* Закругленные углы */
+        }
+        .header__list {
+            list-style-type: none; /* Убираем маркер
+            margin: 0;
+            padding: 0;
+        }
+        .header__item {
+            display: inline; /* Горизонтальное расположение элементов списка */
+            margin-left: 15px; /* Отступ между элементами */
+        }
+        .header__link {
+            color: white; /* Цвет ссылок */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+        .image {
+            width: 100%; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo" role="img" aria-label="Logo">Мой адаптивный вебсайт</div>
+        <nav class="header__nav" aria-label="Main Navigation">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="#">Home</a></li>
+                <li class="header__item"><a class="header__link" href="#">About</a></li>
+                <li class="header__item"><a class="header__link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="content__intro">
+            <h1>Добро пожаловать на мой адаптивный вебсайт!</h1>
+            <p>Это адаптивная страница с адаптивными изображениями, пользовательскими шрифтами и фавиконом.</p>
+        </section>
+        <section class="content__image">
+            <img src="images/responsive-image.jpg" alt="Responsive Image" class="image" loading="lazy">
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Адаптивный вебсайт</p>
+    </footer>
+</body>
+</html>
+
+
+
+

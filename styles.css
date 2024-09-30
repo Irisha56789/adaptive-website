@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Black.ttf') format('truetype'); 
+    font-weight: 900; 
+    font-style: normal; 
+}
+
+body {
+    font-family: 'Roboto Slab', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__link {
+        margin: 10px 0;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств (максимальная ширина 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    main {
+        text-align: center;
+    }
+}
+
+.content {
+    padding: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    }
+    
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
